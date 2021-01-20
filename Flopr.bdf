@@ -4,27 +4,26 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
 	(rect 120 120 288 136)
-	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 30 11)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -34,13 +33,13 @@ agreement for further details.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
 	(rect 128 240 296 256)
-	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 11)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -50,13 +49,13 @@ agreement for further details.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
 	(rect 128 336 296 352)
-	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "D" (rect 5 0 14 11)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "D" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -66,13 +65,13 @@ agreement for further details.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
 	(rect 880 232 1056 248)
-	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "Q" (rect 90 0 100 11)(font "Arial" ))
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Q" (rect 90 0 98 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -85,93 +84,21 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 480 168 576 264)
-	(text "DSwitch" (rect 5 0 53 13)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 81 26 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 29 13)(font "Arial" (font_size 8)))
-		(text "reset" (rect 21 27 50 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 18 13)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 43 39 56)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "D" (rect 0 0 10 13)(font "Arial" (font_size 8)))
-		(text "D" (rect 21 59 31 72)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Q" (rect 0 0 11 13)(font "Arial" (font_size 8)))
-		(text "Q" (rect 64 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 680 168 776 264)
-	(text "DSwitch" (rect 5 0 53 13)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 81 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 29 13)(font "Arial" (font_size 8)))
-		(text "reset" (rect 21 27 50 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 18 13)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 43 39 56)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "D" (rect 0 0 10 13)(font "Arial" (font_size 8)))
-		(text "D" (rect 21 59 31 72)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Q" (rect 0 0 11 13)(font "Arial" (font_size 8)))
-		(text "Q" (rect 64 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
 	(rect 392 200 440 232)
-	(text "NOT" (rect 1 0 22 10)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 3 21 27 32)(font "Arial" ))
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 21 26 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
-		(text "IN" (rect 2 7 17 18)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 17 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
 		(line (pt 0 16)(pt 13 16))
 	)
 	(port
 		(pt 48 16)
 		(output)
-		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -183,19 +110,91 @@ agreement for further details.
 )
 (symbol
 	(rect 376 160 408 192)
-	(text "GND" (rect 8 16 30 26)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 21 27 32)(font "Arial" )(invisible))
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
 		(line (pt 16 8)(pt 16 0))
 	)
 	(drawing
 		(line (pt 8 8)(pt 16 16))
 		(line (pt 16 16)(pt 24 8))
 		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 480 168 576 264)
+	(text "DSwitch" (rect 5 0 53 14)(font "Arial" (font_size 8)))
+	(text "slave" (rect 8 81 35 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 27 50 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "D" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "D" (rect 21 59 29 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Q" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "Q" (rect 64 27 73 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 680 168 776 264)
+	(text "DSwitch" (rect 5 0 53 14)(font "Arial" (font_size 8)))
+	(text "master" (rect 8 81 42 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 27 50 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "D" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "D" (rect 21 59 29 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Q" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "Q" (rect 64 27 73 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
 	)
 )
 (connector
@@ -213,10 +212,6 @@ agreement for further details.
 (connector
 	(pt 368 216)
 	(pt 392 216)
-)
-(connector
-	(pt 440 216)
-	(pt 480 216)
 )
 (connector
 	(pt 368 216)
@@ -255,18 +250,6 @@ agreement for further details.
 	(pt 456 344)
 )
 (connector
-	(pt 600 200)
-	(pt 600 232)
-)
-(connector
-	(pt 600 232)
-	(pt 680 232)
-)
-(connector
-	(pt 576 200)
-	(pt 600 200)
-)
-(connector
 	(pt 656 128)
 	(pt 656 200)
 )
@@ -293,5 +276,23 @@ agreement for further details.
 (connector
 	(pt 456 200)
 	(pt 480 200)
+)
+(connector
+	(text "NOTclk" (rect 450 200 485 217)(font "Intel Clear" ))
+	(pt 440 216)
+	(pt 480 216)
+)
+(connector
+	(pt 600 200)
+	(pt 600 232)
+)
+(connector
+	(text "slaveOutput" (rect 610 216 669 233)(font "Intel Clear" ))
+	(pt 600 232)
+	(pt 680 232)
+)
+(connector
+	(pt 576 200)
+	(pt 600 200)
 )
 (junction (pt 368 248))
