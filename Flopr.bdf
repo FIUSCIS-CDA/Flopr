@@ -262,22 +262,6 @@ refer to the applicable agreement for further details.
 	(pt 680 200)
 )
 (connector
-	(pt 392 160)
-	(pt 392 144)
-)
-(connector
-	(pt 392 144)
-	(pt 456 144)
-)
-(connector
-	(pt 456 144)
-	(pt 456 200)
-)
-(connector
-	(pt 456 200)
-	(pt 480 200)
-)
-(connector
 	(text "NOTclk" (rect 450 200 485 217)(font "Intel Clear" ))
 	(pt 440 216)
 	(pt 480 216)
@@ -294,5 +278,22 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 576 200)
 	(pt 600 200)
+)
+(connector
+	(pt 392 160)
+	(pt 392 144)
+)
+(connector
+	(pt 392 144)
+	(pt 456 144)
+)
+(connector
+	(text "Ground" (rect 440 161 457 195)(font "Intel Clear" )(vertical))
+	(pt 456 144)
+	(pt 456 200)
+)
+(connector
+	(pt 456 200)
+	(pt 480 200)
 )
 (junction (pt 368 248))
